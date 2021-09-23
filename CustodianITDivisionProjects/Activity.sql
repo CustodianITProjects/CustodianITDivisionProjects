@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Activity]
 (
 	[activityID] INT NOT NULL PRIMARY KEY, 
-    [activity_name] VARCHAR(50) NULL, 
+    [activity_name] VARCHAR(50) NOT NULL, 
     [projectID] INT NOT NULL, 
     [priority] INT NOT NULL, 
     [description] TEXT NOT NULL, 
