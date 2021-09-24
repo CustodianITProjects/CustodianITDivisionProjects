@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{4e3ff961-4f58-4566-bfd7-b1ea1a9ae633}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DacApplicationName>Custodian_IT_Division_Projects</DacApplicationName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -56,26 +57,34 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Objects" />
+    <Folder Include="Objects\dbo" />
+    <Folder Include="Objects\dbo\Functions" />
+    <Folder Include="Objects\dbo\Views" />
+    <Folder Include="Objects\dbo\Stored Procedures" />
+    <Folder Include="Objects\dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Project.sql" />
-    <Build Include="Activity.sql" />
-    <Build Include="Task.sql" />
-    <Build Include="Progress.sql" />
-    <Build Include="Project_Manager.sql" />
-    <Build Include="Team.sql" />
-    <Build Include="Employee.sql" />
-    <Build Include="Role.sql" />
-    <Build Include="Team_Member.sql" />
-    <Build Include="Vendor.sql" />
-    <Build Include="Objectives.sql" />
-    <Build Include="Deliverables.sql" />
-    <Build Include="Cost_Implication.sql" />
-    <Build Include="Baseline.sql" />
-    <Build Include="Milestone.sql" />
-    <Build Include="Calendar.sql" />
+    <Build Include="Objects\dbo\Tables\Activity.sql" />
+    <Build Include="Objects\dbo\Tables\Baseline.sql" />
+    <Build Include="Objects\dbo\Tables\Calendar.sql" />
+    <Build Include="Objects\dbo\Tables\Cost_Implication.sql" />
+    <Build Include="Objects\dbo\Tables\Deliverables.sql" />
+    <Build Include="Objects\dbo\Tables\Employee.sql" />
+    <Build Include="Objects\dbo\Tables\Milestone.sql" />
+    <Build Include="Objects\dbo\Tables\Objectives.sql" />
+    <Build Include="Objects\dbo\Tables\Progress.sql" />
+    <Build Include="Objects\dbo\Tables\Project.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CustodianITDivisionProjects.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Objects\dbo\Tables\Project_Manager.sql" />
+    <Build Include="Objects\dbo\Tables\Role.sql" />
+    <Build Include="Objects\dbo\Tables\Task.sql" />
+    <Build Include="Objects\dbo\Tables\Team.sql" />
+    <Build Include="Objects\dbo\Tables\Team_Member.sql" />
+    <Build Include="Objects\dbo\Tables\Vendor.sql" />
   </ItemGroup>
 </Project>
