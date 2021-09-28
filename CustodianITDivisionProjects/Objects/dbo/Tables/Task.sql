@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Task]
 (
-	[taskID] INT NOT NULL PRIMARY KEY, 
+	[taskID] INT NOT NULL PRIMARY KEY IDENTITY, 
     [task_name] VARCHAR(50) NOT NULL, 
     [activityID] INT NOT NULL, 
     [team_memberID] INT NOT NULL, 

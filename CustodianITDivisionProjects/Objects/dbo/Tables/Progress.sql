@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Progress]
 (
-	[progressID] INT NOT NULL PRIMARY KEY, 
+	[progressID] INT NOT NULL PRIMARY KEY IDENTITY, 
     [team_memberID] INT NOT NULL, 
     [taskID] INT NOT NULL, 
     [activityID] INT NOT NULL, 

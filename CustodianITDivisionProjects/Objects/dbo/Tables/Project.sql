@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Project]
 (
-	[projectID] INT NOT NULL PRIMARY KEY, 
+	[projectID] INT NOT NULL PRIMARY KEY IDENTITY, 
     [project_name] VARCHAR(50) NOT NULL, 
     [planned_start_date] DATE NOT NULL, 
     [planned_end_date] DATE NOT NULL, 

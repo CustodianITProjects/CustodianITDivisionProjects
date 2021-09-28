@@ -75,6 +75,7 @@
     <Build Include="Objects\dbo\Tables\Objectives.sql" />
     <Build Include="Objects\dbo\Tables\Progress.sql" />
     <Build Include="Objects\dbo\Tables\Project.sql" />
+    <Build Include="Objects\dbo\Tables\Risk_Register.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CustodianITDivisionProjects.refactorlog" />

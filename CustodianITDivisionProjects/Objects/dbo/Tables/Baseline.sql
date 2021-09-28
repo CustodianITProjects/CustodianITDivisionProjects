@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Baseline]
 (
-	[baselineID] INT NOT NULL PRIMARY KEY, 
+	[baselineID] INT NOT NULL PRIMARY KEY IDENTITY, 
     [activityID] INT NOT NULL, 
     [objectivesID] INT NOT NULL, 
     [deliverablesID] INT NOT NULL, 

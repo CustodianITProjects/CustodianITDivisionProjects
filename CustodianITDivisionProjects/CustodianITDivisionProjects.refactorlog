@@ -168,4 +168,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="calendar_date" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a2a62e2d-3277-47b7-a8e2-d5cc844768a7" ChangeDateTime="09/28/2021 17:06:48">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Risk_Re" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="972db0b6-c321-4c97-9d31-54a005bc7e89" ChangeDateTime="09/28/2021 17:07:08">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[Risk_Re]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="riskID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="306ef703-7ef9-42bb-bdda-1451a9fb28b1" ChangeDateTime="09/28/2021 17:07:26">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[pro]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="projectID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="acc1330c-8f05-47c4-b1d8-d89ed843ffb3" ChangeDateTime="09/28/2021 17:08:11">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="risk_description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b380a7a7-e109-4774-b0b9-e9dd3fe6b64f" ChangeDateTime="09/28/2021 17:10:24">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[risk_owner]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="team_memberID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="889f988e-424f-47f4-b4f8-f0506ae689cc" ChangeDateTime="09/28/2021 17:14:14">
+    <Property Name="ElementName" Value="[dbo].[Risk_Register].[team_memberID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Risk_Register]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="risk_owner" />
+  </Operation>
 </Operations>
